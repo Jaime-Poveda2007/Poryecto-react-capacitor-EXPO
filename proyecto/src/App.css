@@ -1,42 +1,107 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+  padding: 40px 20px;
   text-align: center;
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero p {
+  color: #aaa;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* FILTROS */
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filtros input,
+.filtros select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 220px;
+}
+
+/* FORMULARIO */
+.form {
+  background: #2a2a2a;
+  padding: 30px;
+  border-radius: 20px;
+  width: 60%;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.form button {
+  margin-top: 15px;
+  width: 100%;
+  background: #646cff;
+  color: white;
+}
+
+/* LISTA */
+.titulo-lista {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card {
-  padding: 2em;
+  width: 250px;
+  background: #2f2f2f;
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.2s;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.precio {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #00ff99;
+}
+
+.btn-contacto {
+  margin-top: 10px;
+  width: 100%;
+  background: #00b894;
+  color: white;
 }
